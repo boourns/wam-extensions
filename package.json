@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/boourns/wam-extensions/issues"
   },
-  "homepage": "https://github.com/boourns/wam-extensions#readme"
+  "homepage": "https://github.com/boourns/wam-extensions#readme",
+  "dependencies": {
+    "sdk": "53js/webaudiomodule#workspace=sdk"
+  }
 }
