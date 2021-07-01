@@ -1,0 +1,26 @@
+{
+  "name": "wam-extensions",
+  "version": "0.1.0",
+  "description": "Unofficial extensions to the Web Audio Module API",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/boourns/wam-extensions.git"
+  },
+  "keywords": [
+    "web-audio-module",
+    "wam",
+    "audio",
+    "effect",
+    "plugin"
+  ],
+  "author": "Tom Burns",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boourns/wam-extensions/issues"
+  },
+  "homepage": "https://github.com/boourns/wam-extensions#readme"
+}
