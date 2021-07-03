@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/boourns/wam-extensions#readme",
   "dependencies": {
-    "sdk": "53js/webaudiomodule#workspace=sdk"
+    "sdk": "boourns/webaudiomodule#workspace=sdk"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepack": "yarn build"  
   }
 }

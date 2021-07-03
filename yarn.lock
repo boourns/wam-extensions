@@ -5,10 +5,10 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"sdk@53js/webaudiomodule#workspace=sdk":
+"sdk@boourns/webaudiomodule#workspace=sdk":
   version: 0.0.1
-  resolution: "sdk@https://github.com/53js/webaudiomodule.git#workspace=sdk&commit=be4f89fa4f2800a39d2a743d5a9ac3947e04b3cc"
-  checksum: 19786a601c47dad27c34f53541350436a8be144545ea67063717f4c53d83013b3bbcc1d7fe4d6838de573185ceede440d8a12bdde8497edddd8a4469da33a3d7
+  resolution: "sdk@https://github.com/boourns/webaudiomodule.git#workspace=sdk&commit=8c6baeaa654babed3c0819b6361f7fb566ac9ddd"
+  checksum: 8a6cb629535d321629abbe5302c6dc0e0d58da86437895ea02a09ada6b832546339d515a536bff654c9e57b3ff34f806f2052d6fc3adea7cc453c38aedc4762b
   languageName: node
   linkType: hard
 
@@ -16,6 +16,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "wam-extensions@workspace:."
   dependencies:
-    sdk: "53js/webaudiomodule#workspace=sdk"
+    sdk: "boourns/webaudiomodule#workspace=sdk"
   languageName: unknown
   linkType: soft
