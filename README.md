@@ -5,7 +5,7 @@ Extensions to the Web Audio Module API
 WAM extensions are optional additions to the webaudiomodule API that extend the interaction between WAM plugin and host.
 
 # How?
-WAM extensions are added to the global context under `window.WAMExtensions`.  WAM plugins can check for the existence of a specific extension, and then choose to load the special functionality or operate without the extension.
+WAM extensions are added to the browser context as `window.WAMExtensions`.  WAM plugins can check for the existence of a specific extension, and then choose to load the special functionality or operate without the extension.
 
 # Why extensions?  Why not build into core?
 The idea behind WAM extensions came from documenting my pain points using AudioUnits in iOS to make music, and from looking at where DAWs have chosen to more tightly integrate their own plugins than what they are able to do with existing plugin technologies like VST or AU.
