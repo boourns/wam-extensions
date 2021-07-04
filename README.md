@@ -1,5 +1,5 @@
 # wam-extensions
-Unofficial extensions to the Web Audio Module API
+Extensions to the Web Audio Module API
 
 # What?
 WAM extensions are optional additions to the webaudiomodule API that extend the interaction between WAM plugin and host.
