@@ -35,3 +35,5 @@ Clips provide a way for the host to organize and sequence a list of separate seq
 # ModulationTarget
 This extension allows a WAM to directly modulate another WAM's parameter.  This lets us build various automation styles as WAM plugins, and again push the responsibility out of the host.  For example, a WAM plugin implementing this extension could implement an LFO or a step modulator, or more traditional style point-to-point automation.
 
+# Future Extensions
+A 'video' extension is planned that would let WAMs accept and publish glTextures, which would permit building video FX chains but still ingest audio and MIDI, and use the WAM parameter system for automation and state saving.
