@@ -36,4 +36,6 @@ Clips provide a way for the host to organize and sequence a list of separate seq
 This extension allows a WAM to directly modulate another WAM's parameter.  This lets us build various automation styles as WAM plugins, and again push the responsibility out of the host.  For example, a WAM plugin implementing this extension could implement an LFO or a step modulator, or more traditional style point-to-point automation.
 
 # Future Extensions
+An 'asset management' extension is required.  It would let hosts organize, move, collect assets for a project.  Plugins will defer to the host to load assets.  Plugins may also create new assets and defer to the host to save them - allowing for workflows like re-sampling or generating audio and then importing into another plugin without leaving the project.
+
 A 'video' extension is planned that would let WAMs accept and publish glTextures, which would permit building video FX chains but still ingest audio and MIDI, and use the WAM parameter system for automation and state saving.
