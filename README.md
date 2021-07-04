@@ -17,14 +17,14 @@ In most cases, if a host does not implement a WAM extension, the plugin should b
 # Current extensions
 
 # Notes
-<img width="380" alt="image" src="https://user-images.githubusercontent.com/699550/124386833-39f76e00-dcaa-11eb-85bf-a1069824a0bc.png">
-
 Notes allows an audio plugin to publish a list of notes and names that it responds to.  The host passes this note list to the sequencer plugins that are connected to the audio plugin.
 
 For example, here is the pianoroll WAM without the notes extension:
+
 <img width="346" alt="image" src="https://user-images.githubusercontent.com/699550/124386981-e2a5cd80-dcaa-11eb-95a0-b106d760ba92.png">
 
 And here is the pianoroll WAM with the notes extension, sending notes to the drumsampler WAM:
+
 <img width="380" alt="image" src="https://user-images.githubusercontent.com/699550/124386833-39f76e00-dcaa-11eb-85bf-a1069824a0bc.png">
 
 # Clips
