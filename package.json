@@ -1,10 +1,11 @@
 {
   "name": "wam-extensions",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Unofficial extensions to the Web Audio Module API",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepack": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,5 @@
   "homepage": "https://github.com/boourns/wam-extensions#readme",
   "dependencies": {
     "sdk": "boourns/webaudiomodule#workspace=sdk"
-  },
-  "scripts": {
-    "build": "tsc",
-    "prepack": "yarn build"  
   }
 }
