@@ -7,8 +7,8 @@ __metadata:
 
 "sdk@boourns/webaudiomodule#workspace=sdk":
   version: 0.0.1
-  resolution: "sdk@https://github.com/boourns/webaudiomodule.git#workspace=sdk&commit=64cbc3ab2d0c875f03fbcb907741cc6dae910096"
-  checksum: 8a6cb629535d321629abbe5302c6dc0e0d58da86437895ea02a09ada6b832546339d515a536bff654c9e57b3ff34f806f2052d6fc3adea7cc453c38aedc4762b
+  resolution: "sdk@https://github.com/boourns/webaudiomodule.git#workspace=sdk&commit=3999c9f908e90f832f3bc1c25feb0ad56f83e33d"
+  checksum: 2ffc73f314e91a50af6b8f7de2c7ed10cdf4b80ebaa34c98648e90af226ecd920a24ff785811ab56c2539ce537072f2b6763b7d402afde61df35802c236eb30d
   languageName: node
   linkType: hard
 
