@@ -9,3 +9,9 @@ export {PatternExtension, PatternDelegate, PatternEntry}
 
 import {ModulationTargetExtension, ModulationTargetDelegate} from "./modulationTarget/ModulationTargetExtension"
 export {ModulationTargetExtension, ModulationTargetDelegate}
+
+export default {
+    NoteExtension,
+    PatternExtension,
+    ModulationTargetExtension,
+}
