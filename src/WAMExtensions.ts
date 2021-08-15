@@ -1,6 +1,6 @@
-import { NoteExtension } from "./notes/NoteExtension";
-import { PatternExtension } from "./patterns/PatternExtension";
-import { ModulationTargetExtension } from "./modulationTarget/ModulationTargetExtension";
+import { NoteExtension } from "./notes/NoteExtension.js";
+import { PatternExtension } from "./patterns/PatternExtension.js";
+import { ModulationTargetExtension } from "./modulationTarget/ModulationTargetExtension.js";
 
 
 export type WAMExtensions = {
