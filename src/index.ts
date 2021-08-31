@@ -10,8 +10,12 @@ export {PatternExtension, PatternDelegate, PatternEntry}
 import {ModulationTargetExtension, ModulationTargetDelegate} from "./modulationTarget/ModulationTargetExtension.js"
 export {ModulationTargetExtension, ModulationTargetDelegate}
 
+import {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions} from "./video/VideoExtension.js"
+export {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions}
+
 export default {
     NoteExtension,
     PatternExtension,
     ModulationTargetExtension,
+    VideoExtension
 }
