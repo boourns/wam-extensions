@@ -1,6 +1,6 @@
 {
   "name": "wam-extensions",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Unofficial extensions to the Web Audio Module API",
   "main": "dist/index.js",
   "type": "module",
@@ -25,7 +25,10 @@
     "url": "https://github.com/boourns/wam-extensions/issues"
   },
   "homepage": "https://github.com/boourns/wam-extensions#readme",
-  "dependencies": {
+  "devDependencies": {
     "sdk": "53js/webaudiomodule#workspace=sdk"
+  },
+  "peerDependencies": {
+    "sdk": "*"
   }
 }
