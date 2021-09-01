@@ -17,5 +17,7 @@ __metadata:
   resolution: "wam-extensions@workspace:."
   dependencies:
     sdk: "53js/webaudiomodule#workspace=sdk"
+  peerDependencies:
+    sdk: "*"
   languageName: unknown
   linkType: soft
