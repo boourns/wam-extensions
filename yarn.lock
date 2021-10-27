@@ -5,10 +5,10 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"sdk@53js/webaudiomodule#workspace=sdk":
-  version: 0.0.1
-  resolution: "sdk@https://github.com/53js/webaudiomodule.git#workspace=sdk&commit=d6b1294fca049bf2dda4476fb4fc4d9732debecf"
-  checksum: 4bb548099df84637a8af1f6b4b21babb61619c90d164d0c2d8195ec445cb1d99385161e10d14cf02cf3b0a1ae0a7f6e67caa15dd5cd4efd5ff86b41f6b97ae26
+"@webaudiomodules/api@webaudiomodules/api#commit=84892b520213872f79f7d3d9ff443e05782cc4fe":
+  version: 2.0.0-alpha.1
+  resolution: "@webaudiomodules/api@https://github.com/webaudiomodules/api.git#commit=84892b520213872f79f7d3d9ff443e05782cc4fe"
+  checksum: a44e3a6c3483f43d93cd4f74cda33f8b7e97b9b5ab765d02f91a964e9148f768eee884829591b9defddcc7812a928127ad9ab508aef4829e63156a59b9c64ca4
   languageName: node
   linkType: hard
 
@@ -16,8 +16,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "wam-extensions@workspace:."
   dependencies:
-    sdk: "53js/webaudiomodule#workspace=sdk"
+    "@webaudiomodules/api": "webaudiomodules/api#commit=84892b520213872f79f7d3d9ff443e05782cc4fe"
   peerDependencies:
-    sdk: "*"
+    "@webaudiomodules/api": "*"
   languageName: unknown
   linkType: soft

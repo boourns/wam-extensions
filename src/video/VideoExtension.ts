@@ -28,7 +28,6 @@ export class VideoExtension {
     }
 
     getDelegate(pluginId: string): VideoExtensionDelegate | undefined {
-        console.log("getting video delegate for ", pluginId)
         return this.delegates.get(pluginId)
     }
 }
