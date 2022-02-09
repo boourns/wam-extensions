@@ -34,6 +34,6 @@ export class AssetExtension {
     }
 
     // plugins call these functions, implemented by host
-    pickAsset?: (assetType: WamAssetType) => Promise<LoadedWamAsset>
+    pickAsset?: (assetType: WamAssetType, loadCallback: (asset: LoadedWamAsset) => void) => void
     loadAsset?: (asset: WamAssetRecord) => Promise<LoadedWamAsset>
 }
