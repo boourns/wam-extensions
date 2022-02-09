@@ -3,13 +3,13 @@
 // Plugins register a delegate of interface AssetExtensionInterface with the loaded AssetExtension.
 
 export type WamAssetRecord = {
-    id: string // random token set by host to identify this asset in the project
-    uri: string
+    uri: string // could be globally-loadable, could be a host-specific URI to indicate where to fetch asset
     name: string // friendly name for the file.
 }
 
-export type LoadedWamAsset = {
+export type LoadableWamAsset = {
     asset: WamAssetRecord
+    url: string
 }
 
 export type WamAssetType = "AUDIO" | "DATA"
@@ -34,6 +34,6 @@ export class AssetExtension {
     }
 
     // plugins call these functions, implemented by host
-    pickAsset?: (assetType: WamAssetType, loadCallback: (asset: LoadedWamAsset) => void) => void
-    loadAsset?: (asset: WamAssetRecord) => Promise<LoadedWamAsset>
+    pickAsset?: (assetType: WamAssetType, loadCallback: (asset: LoadableWamAsset) => Promise<void>) => void
+    loadAsset?: (asset: WamAssetRecord) => Promise<LoadableWamAsset>
 }
