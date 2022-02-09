@@ -10,8 +10,9 @@ export type WamAssetRecord = {
 
 export type LoadedWamAsset = {
     asset: WamAssetRecord
-
 }
+
+export type WamAssetType = "AUDIO" | "DATA"
 
 export interface AssetExtensionInterface {
     fetchAssetList(): WamAssetRecord[]
@@ -32,8 +33,7 @@ export class AssetExtension {
         }
     }
 
-    // plugins may call these functions, implemented by host
-    pickAsset?: () => Promise<LoadedWamAsset>
-    
+    // plugins call these functions, implemented by host
+    pickAsset?: (assetType: WamAssetType) => Promise<LoadedWamAsset>
     loadAsset?: (asset: WamAssetRecord) => Promise<LoadedWamAsset>
 }
