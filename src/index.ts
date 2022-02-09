@@ -17,6 +17,7 @@ import {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions} from "./v
 export {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions}
 
 export default {
+    AssetExtension,
     NoteExtension,
     PatternExtension,
     ModulationTargetExtension,
