@@ -1,8 +1,8 @@
 import {WAMExtensions} from "./WAMExtensions.js"
 export {WAMExtensions}
 
-import {AssetExtension, AssetExtensionInterface, WamAssetRecord, LoadedWamAsset} from "./assets/AssetExtension.js"
-export {AssetExtension, AssetExtensionInterface, WamAssetRecord, LoadedWamAsset} 
+import {AssetExtension, AssetExtensionInterface, WamAssetRecord, LoadableWamAsset} from "./assets/AssetExtension.js"
+export {AssetExtension, AssetExtensionInterface, WamAssetRecord, LoadableWamAsset} 
 
 import {NoteExtension,NoteDefinition, NoteListenerCallback} from "./notes/NoteExtension.js"
 export {NoteExtension,NoteDefinition, NoteListenerCallback}
