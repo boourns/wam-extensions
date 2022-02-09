@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/boourns/wam-extensions#readme",
   "devDependencies": {
-    "@webaudiomodules/api": "webaudiomodules/api#commit=3ca912e8e08e66917eba22c330e85554932de494"
+    "@webaudiomodules/api": "webaudiomodules/api#commit=3ca912e8e08e66917eba22c330e85554932de494",
+    "typescript": "^4.0.5"
   },
   "peerDependencies": {
     "@webaudiomodules/api": "*"
