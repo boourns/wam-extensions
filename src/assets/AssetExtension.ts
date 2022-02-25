@@ -5,7 +5,7 @@
 export type WamAsset = {
     uri: string // could be globally-loadable, could be a host-specific URI to indicate where to fetch asset
     name: string // friendly name for the file.
-    content: Blob // content of the asset
+    content?: Blob // content of the asset
 }
 
 export type WamAssetType = "AUDIO" | "DATA"
