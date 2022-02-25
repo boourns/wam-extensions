@@ -35,5 +35,5 @@ export class AssetExtension {
 
     // plugins call these functions, implemented by host
     pickAsset?: (pluginId: string, assetType: WamAssetType, loadCallback: (asset: LoadableWamAsset | undefined) => Promise<void>) => void
-    loadAsset?: (pluginId: string, asset: WamAssetRecord) => Promise<LoadableWamAsset>
+    loadAsset?: (pluginId: string, assetUri: string) => Promise<LoadableWamAsset>
 }
