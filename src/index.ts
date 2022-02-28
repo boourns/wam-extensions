@@ -1,6 +1,9 @@
 import {WAMExtensions} from "./WAMExtensions.js"
 export {WAMExtensions}
 
+import {AssetExtension, AssetExtensionInterface, WamAsset} from "./assets/AssetExtension.js"
+export {AssetExtension, AssetExtensionInterface, WamAsset} 
+
 import {NoteExtension,NoteDefinition, NoteListenerCallback} from "./notes/NoteExtension.js"
 export {NoteExtension,NoteDefinition, NoteListenerCallback}
 
@@ -14,6 +17,7 @@ import {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions} from "./v
 export {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions}
 
 export default {
+    AssetExtension,
     NoteExtension,
     PatternExtension,
     ModulationTargetExtension,
