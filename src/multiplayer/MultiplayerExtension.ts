@@ -41,5 +41,12 @@ export class MultiplayerExtension {
     }
 
     broadcastMessage?: (pluginId: string, message: any) => Promise<boolean>
-    updateUsers?: (userState: MultiplayerState) => void
+
+    updateUsers(userState: MultiplayerState) {
+        this.userState = userState
+        
+        for (let d of this.delegates.values()) {
+            d.userListUpdated(userState)
+        }
+    }
 }
