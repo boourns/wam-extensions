@@ -13,13 +13,17 @@ export {PatternExtension, PatternDelegate, PatternEntry}
 import {ModulationTargetExtension, ModulationTargetDelegate} from "./modulationTarget/ModulationTargetExtension.js"
 export {ModulationTargetExtension, ModulationTargetDelegate}
 
-import {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions} from "./video/VideoExtension.js"
-export {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions}
+import {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions, VideoModuleConfig} from "./video/VideoExtension.js"
+export {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions, VideoModuleConfig}
+
+import { MultiplayerExtension, MultiplayerUser, MultiplayerExtensionInterface } from "./multiplayer/MultiplayerExtension.js"
+export { MultiplayerExtension, MultiplayerUser, MultiplayerExtensionInterface }
 
 export default {
     AssetExtension,
     NoteExtension,
     PatternExtension,
     ModulationTargetExtension,
-    VideoExtension
+    VideoExtension,
+    MultiplayerExtension
 }
