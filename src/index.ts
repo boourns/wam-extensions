@@ -16,8 +16,8 @@ export {ModulationTargetExtension, ModulationTargetDelegate}
 import {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions, VideoModuleConfig} from "./video/VideoExtension.js"
 export {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions, VideoModuleConfig}
 
-import { MultiplayerExtension, MultiplayerUser, MultiplayerExtensionInterface } from "./multiplayer/MultiplayerExtension.js"
-export { MultiplayerExtension, MultiplayerUser, MultiplayerExtensionInterface }
+import { MultiplayerExtension, MultiplayerUser, MultiplayerState, MultiplayerExtensionInterface } from "./multiplayer/MultiplayerExtension.js"
+export { MultiplayerExtension, MultiplayerUser, MultiplayerState, MultiplayerExtensionInterface }
 
 export default {
     AssetExtension,
