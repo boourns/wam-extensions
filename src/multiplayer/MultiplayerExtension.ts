@@ -20,7 +20,7 @@ export type MultiplayerState = {
 
 export interface MultiplayerExtensionInterface {
     userListUpdated(userState: MultiplayerState): void
-    receiveMessage(message: any): void
+    receiveMessage(userId: string, message: any): void
 }
 
 export class MultiplayerExtension {
