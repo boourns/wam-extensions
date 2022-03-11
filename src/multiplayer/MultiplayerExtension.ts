@@ -20,9 +20,13 @@ export interface MultiplayerExtensionInterface {
 
 export class MultiplayerExtension {
     delegates: Map<string, MultiplayerExtensionInterface>
+    users: MultiplayerUser[]
+    userId: string
 
-    constructor() {
+    constructor(users: MultiplayerUser[], userId: string) {
         this.delegates = new Map()
+        this.users = users
+        this.userId = userId
     }
 
     register(pluginId: string, delegate?: MultiplayerExtensionInterface) {
@@ -33,5 +37,6 @@ export class MultiplayerExtension {
         }
     }
 
-    broadcastMessage? : (message: any) => Promise<boolean>
+    broadcastMessage?: (pluginId: string, message: any) => Promise<boolean>
+    updateUsers?: (users: MultiplayerUser[], userId: string) => void
 }
