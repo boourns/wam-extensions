@@ -19,6 +19,8 @@ export type MultiplayerState = {
 }
 
 export interface MultiplayerExtensionInterface {
+    onConnect(): void
+    onDisconnect(): void
     userListUpdated(userState: MultiplayerState): void
     receiveMessage(userId: string, message: any): void
 }
