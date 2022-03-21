@@ -43,6 +43,7 @@ export class MultiplayerExtension {
     }
 
     broadcastMessage?: (pluginId: string, message: any) => Promise<boolean>
+    skipChangeDetectionOnKeys?: (pluginId: string, keys: string[]) => void
 
     updateUsers(userState: MultiplayerState) {
         this.userState = userState
