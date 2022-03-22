@@ -23,6 +23,7 @@ export interface MultiplayerExtensionInterface {
     onDisconnect(): void
     userListUpdated(userState: MultiplayerState): void
     receiveMessage(userId: string, message: any): void
+    disabledStateKeysForChangeDetection(): string[]
 }
 
 export class MultiplayerExtension {
@@ -43,7 +44,6 @@ export class MultiplayerExtension {
     }
 
     broadcastMessage?: (pluginId: string, message: any) => Promise<boolean>
-    skipChangeDetectionOnKeys?: (pluginId: string, keys: string[]) => void
 
     updateUsers(userState: MultiplayerState) {
         this.userState = userState
