@@ -3,7 +3,7 @@ import { PatternExtension } from "./patterns/PatternExtension.js";
 import { ModulationTargetExtension } from "./modulationTarget/ModulationTargetExtension.js";
 import { VideoExtension } from "./video/VideoExtension";
 import { AssetExtension } from "./assets/AssetExtension.js";
-import { MultiplayerExtension } from "./multiplayer/MultiplayerExtension.js";
+import { CollaborationExtension } from "./collaboration/CollaborationExtension.js"
 
 export type WAMExtensions = {
     assets?: AssetExtension
@@ -11,7 +11,7 @@ export type WAMExtensions = {
     patterns?: PatternExtension
     modulationTarget?: ModulationTargetExtension
     video?: VideoExtension
-    multiplayer?: MultiplayerExtension
+    collaboration?: CollaborationExtension
 }
 
 declare global {
