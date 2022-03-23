@@ -16,5 +16,5 @@ export interface CollaborationDocumentInterface {
 }
 
 export class CollaborationExtension {
-    getDocument?: (pluginId: string, documentId: string) => Promise<CollaborationDocumentInterface>
+    getDocument?: (pluginId: string, documentId: string) => CollaborationDocumentInterface
 }
