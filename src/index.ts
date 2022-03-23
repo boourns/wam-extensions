@@ -16,8 +16,8 @@ export {ModulationTargetExtension, ModulationTargetDelegate}
 import {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions, VideoModuleConfig} from "./video/VideoExtension.js"
 export {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions, VideoModuleConfig}
 
-import { CollaborationExtension, CollaborationDocumentInterface, CollaborationOperation } from "./collaboration/CollaborationExtension.js"
-export { CollaborationExtension, CollaborationDocumentInterface, CollaborationOperation }
+import { CollaborationExtension, CollaborationDocumentInterface, CollaborationOperation, RemoteSelection } from "./collaboration/CollaborationExtension.js"
+export { CollaborationExtension, CollaborationDocumentInterface, CollaborationOperation, RemoteSelection }
 
 export default {
     AssetExtension,

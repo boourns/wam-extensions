@@ -8,10 +8,11 @@ export type CollaborationOperation = {
 }
 
 export type RemoteSelection = {
-    position: number
-    length: number
+    anchor: number
+    head: number
     color: string
     username: string
+    userId: string
 }
 
 export interface CollaborationDocumentInterface {
