@@ -7,12 +7,21 @@ export type CollaborationOperation = {
     text?: string
 }
 
+export type RemoteSelection = {
+    position: number
+    length: number
+    color: string
+    username: string
+}
+
 export interface CollaborationDocumentInterface {
     toString(): string
     onUpdate(callback?: (operations: CollaborationOperation[]) => void): void
     insert(position: number, text: string): void
     delete(index: number, length: number): void
     applyOperations(operations: CollaborationOperation[]): void
+    updateSelection(anchor: number, head: number): void
+    selections(): RemoteSelection[]
 }
 
 export class CollaborationExtension {
