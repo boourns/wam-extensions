@@ -26,5 +26,5 @@ export interface CollaborationDocumentInterface {
 }
 
 export class CollaborationExtension {
-    getDocument?: (pluginId: string, documentId: string) => CollaborationDocumentInterface
+    getDocument?: (pluginId: string, documentId: string, initialContent: string) => CollaborationDocumentInterface
 }
