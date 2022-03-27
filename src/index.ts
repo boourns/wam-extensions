@@ -13,13 +13,17 @@ export {PatternExtension, PatternDelegate, PatternEntry}
 import {ModulationTargetExtension, ModulationTargetDelegate} from "./modulationTarget/ModulationTargetExtension.js"
 export {ModulationTargetExtension, ModulationTargetDelegate}
 
-import {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions} from "./video/VideoExtension.js"
-export {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions}
+import {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions, VideoModuleConfig} from "./video/VideoExtension.js"
+export {VideoExtension, VideoExtensionDelegate, VideoExtensionOptions, VideoModuleConfig}
+
+import { CollaborationExtension, CollaborationDocumentInterface, CollaborationOperation, RemoteSelection } from "./collaboration/CollaborationExtension.js"
+export { CollaborationExtension, CollaborationDocumentInterface, CollaborationOperation, RemoteSelection }
 
 export default {
     AssetExtension,
     NoteExtension,
     PatternExtension,
     ModulationTargetExtension,
-    VideoExtension
+    VideoExtension,
+    CollaborationExtension
 }
