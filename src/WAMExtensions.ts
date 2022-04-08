@@ -1,9 +1,10 @@
-import { NoteExtension } from "./notes/NoteExtension.js";
-import { PatternExtension } from "./patterns/PatternExtension.js";
-import { ModulationTargetExtension } from "./modulationTarget/ModulationTargetExtension.js";
+import { NoteExtension } from "./notes/NoteExtension";
+import { PatternExtension } from "./patterns/PatternExtension";
+import { ModulationTargetExtension } from "./modulationTarget/ModulationTargetExtension";
 import { VideoExtension } from "./video/VideoExtension";
-import { AssetExtension } from "./assets/AssetExtension.js";
-import { CollaborationExtension } from "./collaboration/CollaborationExtension.js"
+import { AssetExtension } from "./assets/AssetExtension";
+import { CollaborationExtension } from "./collaboration/CollaborationExtension"
+import { RecordingExtension } from "./recording/RecordingExtension"
 
 export type WAMExtensions = {
     assets?: AssetExtension
@@ -12,6 +13,7 @@ export type WAMExtensions = {
     modulationTarget?: ModulationTargetExtension
     video?: VideoExtension
     collaboration?: CollaborationExtension
+    recording?: RecordingExtension
 }
 
 declare global {
