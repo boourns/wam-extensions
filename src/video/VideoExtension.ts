@@ -1,5 +1,6 @@
 export type VideoExtensionDelegate = {
-    connectVideo(options: VideoExtensionOptions): VideoModuleConfig
+    connectVideo(options: VideoExtensionOptions): void
+    config(): VideoModuleConfig
     render(inputs: WebGLTexture[], currentTime: number): WebGLTexture[]
     disconnectVideo(): void
 }
