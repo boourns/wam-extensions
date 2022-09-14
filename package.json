@@ -1,6 +1,6 @@
 {
   "name": "wam-extensions",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Unofficial extensions to the Web Audio Module 2 API",
   "main": "dist/index.js",
   "type": "module",
