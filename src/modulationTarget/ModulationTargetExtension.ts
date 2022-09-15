@@ -23,5 +23,5 @@ export class ModulationTargetExtension {
         return this.delegates.get(pluginId)
     }
 
-    lockParameterForAutomation?: (pluginId: string, paramId: string) => void
+    lockParametersForAutomation?: (pluginId: string, paramIds: string[]) => void
 }
