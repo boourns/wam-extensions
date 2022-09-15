@@ -1,7 +1,7 @@
-import { WamParameterInfo } from "@webaudiomodules/api"
+import { WamParameterInfo, WamParameterInfoMap } from "@webaudiomodules/api"
 
 export type ModulationTargetDelegate = {
-    connectModulation: (params: WamParameterInfo[]) => void
+    connectModulation: (params: WamParameterInfoMap) => void
 }
 
 export class ModulationTargetExtension {
