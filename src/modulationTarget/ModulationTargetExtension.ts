@@ -1,7 +1,7 @@
 import { WamParameterInfo, WamParameterInfoMap } from "@webaudiomodules/api"
 
 export type ModulationTargetDelegate = {
-    connectModulation: (params: WamParameterInfoMap) => void
+    connectModulation: (params: WamParameterInfoMap) => Promise<void>
 }
 
 export class ModulationTargetExtension {
@@ -23,5 +23,5 @@ export class ModulationTargetExtension {
         return this.delegates.get(pluginId)
     }
 
-    lockParametersForAutomation?: (pluginId: string, paramIds: string[]) => void
+    lockParametersForAutomation?: (pluginId: string, paramIds: string[]) => Promise<void>
 }
