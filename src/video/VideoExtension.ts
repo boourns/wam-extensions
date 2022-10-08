@@ -8,7 +8,7 @@ export type VideoExtensionDelegate = {
 export type VideoExtensionOptions = {
     width: number
     height: number
-    gl: WebGLRenderingContext
+    gl: WebGL2RenderingContext
 }
 
 export type VideoModuleConfig = {
