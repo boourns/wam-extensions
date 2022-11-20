@@ -22,6 +22,9 @@ export { CollaborationExtension, CollaborationDocumentInterface, CollaborationOp
 import { RecordingExtension, RecordingDelegate } from "./recording/RecordingExtension.js"
 export { RecordingExtension, RecordingDelegate }
 
+import { ThemeExtension, ThemeUpdateCallback } from "./theme/ThemeExtension.js"
+export {ThemeExtension, ThemeUpdateCallback}
+
 export default {
     AssetExtension,
     NoteExtension,
@@ -29,5 +32,6 @@ export default {
     ModulationTargetExtension,
     VideoExtension,
     CollaborationExtension,
-    RecordingExtension
+    RecordingExtension,
+    ThemeExtension
 }
