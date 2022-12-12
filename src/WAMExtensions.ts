@@ -7,6 +7,7 @@ import { CollaborationExtension } from "./collaboration/CollaborationExtension.j
 import { RecordingExtension } from "./recording/RecordingExtension.js"
 import { UserSettingExtension } from "./userSetting/userSetting.js";
 import { ThemeExtension } from "./theme/ThemeExtension.js";
+import { RunPresetExtension } from "./runPreset/RunPresetExtension.js"
 
 export type WAMExtensions = {
     assets?: AssetExtension
@@ -18,6 +19,7 @@ export type WAMExtensions = {
     recording?: RecordingExtension
     userSetting?: UserSettingExtension
     theme?: ThemeExtension
+    runPreset?: RunPresetExtension
 }
 
 declare global {
