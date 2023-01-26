@@ -17,7 +17,7 @@ export type RemoteSelection = {
 
 export interface CollaborationDocumentInterface {
     toString(): Promise<string>
-    onUpdate(callback?: (operations: CollaborationOperation[]) => Promise<void>): void
+    onUpdate(callback?: (operations: CollaborationOperation[]) => Promise<void>): Promise<void>
     insert(position: number, text: string): Promise<void>
     delete(index: number, length: number): Promise<void>
     applyOperations(operations: CollaborationOperation[]): Promise<void>
