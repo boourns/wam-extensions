@@ -16,15 +16,15 @@ export type RemoteSelection = {
 }
 
 export interface CollaborationDocumentInterface {
-    toString(): string
-    onUpdate(callback?: (operations: CollaborationOperation[]) => void): void
-    insert(position: number, text: string): void
-    delete(index: number, length: number): void
-    applyOperations(operations: CollaborationOperation[]): void
-    updateSelection(anchor: number, head: number): void
-    selections(): RemoteSelection[]
+    toString(): Promise<string>
+    observe(callback?: (operations: CollaborationOperation[]) => Promise<void>): Promise<void>
+    insert(position: number, text: string): Promise<void>
+    delete(index: number, length: number): Promise<void>
+    applyOperations(operations: CollaborationOperation[]): Promise<void>
+    updateSelection(anchor: number, head: number): Promise<void>
+    selections(): Promise<RemoteSelection[]>
 }
 
 export class CollaborationExtension {
-    getDocument?: (pluginId: string, documentId: string, initialContent: string) => CollaborationDocumentInterface
+    getDocument?: (pluginId: string, documentId: string, initialContent: string) => Promise<CollaborationDocumentInterface>
 }

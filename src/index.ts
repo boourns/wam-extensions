@@ -22,6 +22,13 @@ export { CollaborationExtension, CollaborationDocumentInterface, CollaborationOp
 import { RecordingExtension, RecordingDelegate } from "./recording/RecordingExtension.js"
 export { RecordingExtension, RecordingDelegate }
 
+import { ThemeExtension, ThemeUpdateCallback } from "./theme/ThemeExtension.js"
+export {ThemeExtension, ThemeUpdateCallback}
+
+import { RunPresetExtension, RunPresetDelegate } from "./runPreset/RunPresetExtension.js"
+export { RunPresetExtension, RunPresetDelegate }
+
+
 export default {
     AssetExtension,
     NoteExtension,
@@ -29,5 +36,7 @@ export default {
     ModulationTargetExtension,
     VideoExtension,
     CollaborationExtension,
-    RecordingExtension
+    RecordingExtension,
+    ThemeExtension,
+    RunPresetExtension
 }
